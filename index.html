@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox Cloud Gaming</title>
+    <title>Viewer</title>
     <style>
         html, body { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #000; font-family: sans-serif; }
         iframe { width: 100%; height: 100%; border: none; display: none; }
@@ -15,15 +15,14 @@
         }
         #ntf b { color: #2ecc71; }
         #btn { background: #333; border: none; color: #fff; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 11px; }
-        #ld { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: #444; background: #000; }
+        .ld { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; color: #444; background: #000; }
     </style>
 </head>
 <body>
     <div id="ld">Initialising...</div>
     <iframe id="ifr" allowfullscreen allow="autoplay; fullscreen; gamepad; microphone; camera"></iframe>
-
     <script>
-        document.getElementById('ifr').src = "https://www.xbox.com/en-us/play";
+        document.getElementById('ifr').src = "http://streamex.sh";
         document.getElementById('ifr').style.display = 'block';
         document.getElementById('ld').style.display = 'none';
     </script>
